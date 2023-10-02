@@ -9,11 +9,12 @@
         <Authors>1FriendlyDoge</Authors>
         <Description>A simple wrapper for the Bloxlink API.</Description>
         <RepositoryUrl>https://github.com/1FriendlyDoge/BloxlinkSharp</RepositoryUrl>
-        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <PackageLicenseFile>LICENSE</PackageLicenseFile>
         <PackageReadmeFile>README.md</PackageReadmeFile>
     </PropertyGroup>
     <ItemGroup>
-        <None Include="README.md" Pack="true" PackagePath="\"/>
+        <None Include="$(SolutionDir)LICENSE" Pack="true" PackagePath="\"/>
+        <None Include="$(SolutionDir)README.md" Pack="true" PackagePath="\"/>
         <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
     </ItemGroup>
 
