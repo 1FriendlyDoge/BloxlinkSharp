@@ -4,6 +4,14 @@
         <TargetFramework>net7.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <Title>BloxlinkSharp</Title>
+        <Authors>1FriendlyDoge</Authors>
+        <Description>A simple wrapper for the Bloxlink API.</Description>
     </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    </ItemGroup>
 
 </Project>
