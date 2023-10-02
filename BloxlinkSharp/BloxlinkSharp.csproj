@@ -8,10 +8,15 @@
         <Title>BloxlinkSharp</Title>
         <Authors>1FriendlyDoge</Authors>
         <Description>A simple wrapper for the Bloxlink API.</Description>
+        <RepositoryUrl>https://github.com/1FriendlyDoge/BloxlinkSharp</RepositoryUrl>
+        <PackageLicenseFile>LICENSE</PackageLicenseFile>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
     </PropertyGroup>
 
     <ItemGroup>
-      <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+        <None Include="README.md" Pack="true"/>
+        <None Include="LICENSE" Pack="true"/>
+        <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
     </ItemGroup>
 
 </Project>
