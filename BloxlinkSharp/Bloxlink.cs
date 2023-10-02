@@ -71,4 +71,48 @@ public class Bloxlink
         return BloxlinkResponse<RobloxResolve>.FromHttpResponse(
             await _client.GetAsync($"public/guilds/{serverID}/discord-to-roblox/{userID}"));
     }
+    
+    public async Task<BloxlinkResponse<RobloxResolve>> DiscordToRoblox(long userID)
+    {
+        if (_client == null)
+        {
+            throw new BloxlinkClientNotBuilt();
+        }
+
+        return BloxlinkResponse<RobloxResolve>.FromHttpResponse(
+            await _client.GetAsync($"public/discord-to-roblox/{userID}"));
+    }
+    
+    public async Task<BloxlinkResponse<DiscordResolve>> RobloxToDiscord(long serverID, long robloxID)
+    {
+        if (_client == null)
+        {
+            throw new BloxlinkClientNotBuilt();
+        }
+
+        return BloxlinkResponse<DiscordResolve>.FromHttpResponse(
+            await _client.GetAsync($"public/guilds/{serverID}/roblox-to-discord/{robloxID}"));
+    }
+    
+    public async Task<BloxlinkResponse<DiscordResolve>> RobloxToDiscord(long robloxID)
+    {
+        if (_client == null)
+        {
+            throw new BloxlinkClientNotBuilt();
+        }
+
+        return BloxlinkResponse<DiscordResolve>.FromHttpResponse(
+            await _client.GetAsync($"public/roblox-to-discord/{robloxID}"));
+    }
+    
+    public async Task<BloxlinkResponse<UserUpdate>> UpdateUser(long serverID, long userID)
+    {
+        if (_client == null)
+        {
+            throw new BloxlinkClientNotBuilt();
+        }
+
+        return BloxlinkResponse<UserUpdate>.FromHttpResponse(
+            await _client.PostAsync($"public/guilds/{serverID}/update-user/{userID}", null));
+    }
 }
