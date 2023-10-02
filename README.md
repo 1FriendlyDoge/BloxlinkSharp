@@ -11,8 +11,8 @@
 > ### Using Environment:
 > ```csharp
 > new Bloxlink()
->     .UseAuthEnvironment() // BloxlinkBaseURL (default: https://api.blox.link/v4/)
->     .UseBaseUrlEnvironment() // BloxlinkAuth
+>     .UseAuthEnvironment() // BloxlinkAuth
+>     .UseBaseUrlEnvironment() // BloxlinkBaseURL (default: https://api.blox.link/v4/)
 >     .Build();
 > ```
 
