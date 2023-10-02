@@ -10,8 +10,7 @@ public class Bloxlink
     private string? _apiKey;
     private string _baseUrl = "https://api.blox.link/v4/";
     private BloxlinkClient? _client;
-
-
+    
     // Constructors
     
     public Bloxlink()
@@ -57,7 +56,6 @@ public class Bloxlink
         _client = new BloxlinkClient(_apiKey ?? throw new EnvironmentVariableNull("BloxlinkAuth"), _baseUrl);
         return this;
     }
-    
     
     // Methods
     

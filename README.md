@@ -1,6 +1,8 @@
 ﻿# BloxlinkSharp
 > Wrapper for the [Bloxlink API](https://www.blox.link/dashboard/user/developer).
 
+[![CodeFactor](https://www.codefactor.io/repository/github/1friendlydoge/bloxlinksharp/badge)](https://www.codefactor.io/repository/github/1friendlydoge/bloxlinksharp)
+
 ## Getting Started
 > ### Using Constructor:
 > ```csharp

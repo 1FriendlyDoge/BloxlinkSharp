@@ -8,7 +8,7 @@ public class RobloxResolve
     public string? RobloxID { get; private set; }
     
     [JsonProperty("resolved")]
-    public Resolved? Resolved { get; private set;  }
+    public Resolved? Resolved { get; private set; }
 }
 
 public class Resolved
