@@ -2,12 +2,14 @@
 > Wrapper for the [Bloxlink API](https://www.blox.link/dashboard/user/developer).
 
 [![CodeFactor](https://www.codefactor.io/repository/github/1friendlydoge/bloxlinksharp/badge)](https://www.codefactor.io/repository/github/1friendlydoge/bloxlinksharp)
+[![Nuget](https://img.shields.io/nuget/v/BloxlinkSharp)](https://www.nuget.org/packages/BloxlinkSharp)
+
 
 ## Getting Started
 > ### Using Constructor:
 > ```csharp
 > new Bloxlink("your_api_key") // string apiKey, string baseUrl = "https://api.blox.link/v4/"
->     .Build()
+>     .Build();
 > ```
 
 > ### Using Environment:
