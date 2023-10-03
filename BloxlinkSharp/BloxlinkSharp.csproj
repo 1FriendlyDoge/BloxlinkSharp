@@ -5,14 +5,18 @@
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <PackageId>BloxlinkSharp</PackageId>
         <Title>BloxlinkSharp</Title>
         <Authors>1FriendlyDoge</Authors>
+        <PackageIcon>BloxlinkSharpIcon.png</PackageIcon>
         <Description>A simple wrapper for the Bloxlink API.</Description>
         <RepositoryUrl>https://github.com/1FriendlyDoge/BloxlinkSharp</RepositoryUrl>
         <PackageLicenseFile>LICENSE</PackageLicenseFile>
         <PackageReadmeFile>README.md</PackageReadmeFile>
+        <Version>1.0.1</Version>
     </PropertyGroup>
     <ItemGroup>
+        <None Include="$(SolutionDir)BloxlinkSharpIcon.png" Pack="true" PackagePath="\"/>
         <None Include="$(SolutionDir)LICENSE" Pack="true" PackagePath="\"/>
         <None Include="$(SolutionDir)README.md" Pack="true" PackagePath="\"/>
         <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
